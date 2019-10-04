@@ -3,7 +3,9 @@
   "scripts": {
     "setup": "bin/setup",
     "local": "bundle exec jekyll serve --drafts",
-    "publish": "bin/deploy"
+    "publish": "bin/deploy",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "jquery": "^3.2.1",
@@ -11,6 +13,8 @@
     "retinajs": "^2.1.1",
     "svgxuse": "^1.2.4",
     "webfontloader": "^1.6.28",
-    "zooming": "^2.0.0"
-  }
+    "zooming": "^2.0.0",
+    "snyk": "^1.230.5"
+  },
+  "snyk": true
 }
